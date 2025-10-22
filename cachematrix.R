@@ -38,7 +38,6 @@ cacheSolve <- function(x, ...) {
   # Compute the inverse if not cached
   tab <- x$get()
   inv <- solve(tab, ...)
-  x$setInv(inv)
-  
+  x$setInv(inv)  
   inv
 }
